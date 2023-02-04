@@ -1,0 +1,255 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\mhlev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mhlev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+        "projectName": "ConsoleUI",
+        "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\ConsoleUI\\ConsoleUI.csproj",
+        "packagesPath": "C:\\Users\\mhlev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\ConsoleUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mhlev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Business\\Business.csproj"
+              },
+              "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\mhlev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mhlev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\mhlev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mhlev\\Desktop\\ \\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mhlev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
