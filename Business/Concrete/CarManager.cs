@@ -2,6 +2,7 @@
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace Business.Concrete;
 
@@ -44,5 +45,10 @@ public class CarManager : ICarService
             _carDal.Add(car);
             Console.WriteLine("New car ADDED successfully ");
         }
+    }
+
+    public List<CarDetailsDto> GetCarDetails()
+    {
+        return _carDal.GetCarDetails();
     }
 }

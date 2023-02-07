@@ -10,3 +10,6 @@ C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities\obj\Debug\net7.0\refint\Entities.dll
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities\obj\Debug\net7.0\Entities.pdb
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities\obj\Debug\net7.0\ref\Entities.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities\bin\Debug\net7.0\Core.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities\bin\Debug\net7.0\Core.pdb
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\Entities\obj\Debug\net7.0\Entities.csproj.CopyComplete

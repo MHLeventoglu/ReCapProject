@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 
 namespace DataAccess.Concrete.InMemory;
 
@@ -65,5 +66,10 @@ public class InMemoryCarDal : ICarDal
         carToUpdate.ModelYear = car.ModelYear;
         carToUpdate.DailyPrice = car.DailyPrice;
         carToUpdate.ColorId = car.ColorId;
+    }
+
+    public List<CarDetailsDto> GetCarDetails()
+    {
+        throw new NotImplementedException();
     }
 }
