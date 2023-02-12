@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -12,52 +14,53 @@ public class BrandManager:IBrandService
     {
         _brandDal = brandDal;
     }
-    public List<Brand> GetAll()
+    public IDataResult<List<Brand>> GetAll()
     {
-        return _brandDal.GetAll();
+        if (DateTime.Now.Hour==11)
+        {
+            return new ErrorDataResult<List<Brand>>(Messages.MaintenanceTime);
+        }
+        return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(),Messages.BrandsListed);
     }
 
-    public Brand Get(int id)
+    public IDataResult<Brand> Get(int id)
     {
-        return _brandDal.Get(b => b.BrandId == id);
+        if (DateTime.Now.Hour==11)
+            {
+                return new ErrorDataResult<Brand>(Messages.MaintenanceTime);
+            }
+            return new SuccessDataResult<Brand>(_brandDal.Get(b=>b.BrandId == id));
     }
 
-    public void Add(Brand brand)
+    public IResult Add(Brand brand)
     {
         if (brand.BrandName!.Length >= 2)
         {
             _brandDal.Add(brand);
-            Console.WriteLine("Brand successfully added");
+            return new SuccessResult(Messages.BrandAdded);
         }
-        else
-        {
-            Console.WriteLine("Brand name could Not be shorter than 2 chars");
-        }
+
+        return new ErrorResult(Messages.InvalidBrandName);
     }
 
-    public void Delete(Brand brand)
+    public IResult Delete(Brand brand)
     {
         if (brand.BrandName != null) 
         {
             _brandDal.Delete(brand);
-            Console.WriteLine("Brand successfully deleted");
+            return new SuccessResult(Messages.BrandDeleted);
         }
-        else
-        {
-            Console.WriteLine("Brand you tried to delete does not exists");
-        }
+        return new ErrorResult(Messages.BranDoesNotExist);
     }
 
-    public void Update(Brand brand)
+    public IResult Update(Brand brand)
     {
         if (brand.BrandName != null) 
         {
             _brandDal.Update(brand);
-            Console.WriteLine("Brand successfully updated");
+            return new SuccessResult(Messages.BrandUpdated);
         }
-        else
-        {
-            Console.WriteLine("Brand you tried to update does not exists");
-        }
+        return new ErrorResult(Messages.BranDoesNotExist);
+
     }
 }

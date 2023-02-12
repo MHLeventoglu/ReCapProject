@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
@@ -15,40 +17,53 @@ public class CarManager : ICarService
         _carDal = carDal;
     }
 
-    public List<Car> GetAll()
+    public IDataResult<List<Car>> GetAll()
     {
         using (DataBaseContext context = new DataBaseContext())
         {
-            return _carDal.GetAll();
+            if (DateTime.Now.Hour==11)
+            {
+                return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
+            }
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsListed);
         }
     }
 
-    public List<Car> GetByBrandId(int id)
+    public IDataResult<List<Car>> GetByBrandId(int id)
     {
-        return _carDal.GetAll(p => p.BrandId == id);
+        return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.BrandId == id));
     }
 
-    public List<Car> GetByColorId(int id)
+    public IDataResult<List<Car>> GetByColorId(int id)
     {
-        return _carDal.GetAll(p => p.ColorId == id);
+        return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == id));
     }
 
-    public List<Car> GetByPriceRange(decimal min, decimal max)
+    public IDataResult<List<Car>> GetByPriceRange(decimal min, decimal max)
     {
-        return _carDal.GetAll(p => p.DailyPrice>=min && p.DailyPrice<=max);
+        return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.DailyPrice>=min && p.DailyPrice<=max));
     }
 
-    public void Add(Car car)
+    public IResult Add(Car car)
     {
         if (car.Description.Length>=2 && car.DailyPrice>=0)
         {
             _carDal.Add(car);
-            Console.WriteLine("New car ADDED successfully ");
+            return new SuccessResult((Messages.CarAdded + car.Description));
         }
+
+        return new ErrorResult(Messages.InvalidCarName);
     }
 
-    public List<CarDetailsDto> GetCarDetails()
+    public IDataResult<List<CarDetailsDto>> GetCarDetails()
     {
-        return _carDal.GetCarDetails();
+        using (DataBaseContext context = new DataBaseContext())
+        {
+            if (DateTime.Now.Hour==11)
+            {
+                return new ErrorDataResult<List<CarDetailsDto>>(Messages.MaintenanceTime);
+            }
+            return new SuccessDataResult<List<CarDetailsDto>>(_carDal.GetCarDetails(),Messages.CarsListed);
+        }
     }
 }

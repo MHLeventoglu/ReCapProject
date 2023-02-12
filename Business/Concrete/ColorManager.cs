@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -12,57 +14,52 @@ public class ColorManager:IColorService
     {
         _colorDal = colorDal;
     }
-
-    public void Color(IColorDal colorDal)
+    public IDataResult<List<Color>> GetAll()
     {
-        _colorDal = colorDal;
-    }
-    public List<Color> GetAll()
-    {
-        return _colorDal.GetAll();
-    }
-
-    public Color Get(int id)
-    {
-        return _colorDal.Get(b => b.ColorId == id);
+        if (DateTime.Now.Hour==11)
+        {
+            return new ErrorDataResult<List<Color>>(Messages.MaintenanceTime);
+        }
+        return new SuccessDataResult<List<Color>>(_colorDal.GetAll(),Messages.ColorsListed);
     }
 
-    public void Add(Color color)
+    public IDataResult<Color> Get(int id)
+    {
+        if (DateTime.Now.Hour==11)
+        {
+            return new ErrorDataResult<Color>(Messages.MaintenanceTime);
+        }
+        return new SuccessDataResult<Color>(_colorDal.Get(c=>c.ColorId == id));
+    }
+
+    public IResult Add(Color color)
     {
         if (color.ColorName!.Length >= 2)
         {
             _colorDal.Add(color);
-            Console.WriteLine("Color successfully added");
+            return new SuccessResult(Messages.ColorAdded);
         }
-        else
-        {
-            Console.WriteLine("Color name could Not be shorter than 2 chars");
-        }
+
+        return new ErrorResult(Messages.InvalidColorName);
     }
 
-    public void Delete(Color color)
+    public IResult Delete(Color color)
     {
         if (color.ColorName != null) 
         {
             _colorDal.Delete(color);
-            Console.WriteLine("Color successfully deleted");
+            return new SuccessResult(Messages.ColorUpdated);
         }
-        else
-        {
-            Console.WriteLine("Color you tried to delete does not exists");
-        }
+        return new ErrorResult(Messages.ColorDoesNotExist);
     }
-
-    public void Update(Color color)
+    public IResult Update(Color color)
     {
         if (color.ColorName != null) 
         {
             _colorDal.Update(color);
-            Console.WriteLine("Color successfully updated");
+            return new SuccessResult(Messages.ColorUpdated);
         }
-        else
-        {
-            Console.WriteLine("Color you tried to update does not exists");
-        }
+        return new ErrorResult(Messages.ColorDoesNotExist);
+
     }
 }
