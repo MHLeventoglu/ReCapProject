@@ -1,4 +1,5 @@
-﻿using Business.Abstract;
+﻿using System.Runtime.InteropServices.JavaScript;
+using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -19,14 +20,16 @@ public class CarManager : ICarService
 
     public IDataResult<List<Car>> GetAll()
     {
-        using (DataBaseContext context = new DataBaseContext())
-        {
             if (DateTime.Now.Hour==11)
             {
                 return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
             }
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsListed);
-        }
+    }
+
+    public IDataResult<Car> GetById(int id)
+    {
+        return new SuccessDataResult<Car>(_carDal.Get(c=>c.Id==id));
     }
 
     public IDataResult<List<Car>> GetByBrandId(int id)
@@ -46,7 +49,7 @@ public class CarManager : ICarService
 
     public IResult Add(Car car)
     {
-        if (car.Description.Length>=2 && car.DailyPrice>=0)
+        if (car.Description != null && car.Description.Length>=2 && car.DailyPrice>=0)
         {
             _carDal.Add(car);
             return new SuccessResult((Messages.CarAdded + car.Description));
@@ -55,15 +58,33 @@ public class CarManager : ICarService
         return new ErrorResult(Messages.InvalidCarName);
     }
 
+    public IResult Delete(Car car)
+    {
+        if (car.Description != null)
+        {
+            _carDal.Delete(car);
+            return new SuccessResult(Messages.CarAdded + car.Description);
+        }
+        return new ErrorResult(Messages.InvalidCarName);
+    }
+
+    public IResult Update(Car car)
+    {
+        if (car.Description != null)
+        {
+            return new SuccessResult(Messages.CarAdded + car.Description);
+        }
+        return new ErrorResult(Messages.InvalidCarName);
+    }
+
     public IDataResult<List<CarDetailsDto>> GetCarDetails()
     {
-        using (DataBaseContext context = new DataBaseContext())
-        {
+        
             if (DateTime.Now.Hour==11)
             {
                 return new ErrorDataResult<List<CarDetailsDto>>(Messages.MaintenanceTime);
             }
             return new SuccessDataResult<List<CarDetailsDto>>(_carDal.GetCarDetails(),Messages.CarsListed);
-        }
+        
     }
 }

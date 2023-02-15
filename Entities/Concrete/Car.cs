@@ -5,9 +5,9 @@ namespace Entities.Concrete;
 
 public class Car : IEntity
 {
-    public Car(int id, int brandId, int colorId, int modelYear, decimal dailyPrice, string? description)
+    public Car(int carId, int brandId, int colorId, int modelYear, decimal dailyPrice, string? description)
     {
-        Id = id;
+        Id = carId;
         BrandId = brandId;
         ColorId = colorId;
         ModelYear = modelYear;

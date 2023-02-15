@@ -14,8 +14,8 @@ public class EfCarDal : EfEntityRepositoryBase<Car,DataBaseContext>,ICarDal
         using (DataBaseContext context = new DataBaseContext())
         {
             var result = from p in context.Cars
-                                           join b in context.Brands on p.BrandId equals b.BrandId
-                                           join c in context.Colors on p.ColorId equals c.ColorId 
+                                           join b in context.Brands on p.BrandId equals b.Id
+                                           join c in context.Colors on p.ColorId equals c.Id 
                                            orderby p.Id
                 
                 select new CarDetailsDto

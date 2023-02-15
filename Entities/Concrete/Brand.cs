@@ -6,7 +6,7 @@ public class Brand : IEntity
 {
     public Brand(int brandId, string? brandName)
     {
-        BrandId = brandId;
+        Id = brandId;
         BrandName = brandName;
     }
 
@@ -14,6 +14,6 @@ public class Brand : IEntity
     {
     }
 
-    public int BrandId { get; set; }
+    public int Id { get; set; }
     public string? BrandName { get; set; }
 }

@@ -23,13 +23,13 @@ public class BrandManager:IBrandService
         return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(),Messages.BrandsListed);
     }
 
-    public IDataResult<Brand> Get(int id)
+    public IDataResult<Brand> GetById(int id)
     {
         if (DateTime.Now.Hour==11)
             {
                 return new ErrorDataResult<Brand>(Messages.MaintenanceTime);
             }
-            return new SuccessDataResult<Brand>(_brandDal.Get(b=>b.BrandId == id));
+            return new SuccessDataResult<Brand>(_brandDal.Get(b=>b.Id == id));
     }
 
     public IResult Add(Brand brand)

@@ -23,13 +23,13 @@ public class ColorManager:IColorService
         return new SuccessDataResult<List<Color>>(_colorDal.GetAll(),Messages.ColorsListed);
     }
 
-    public IDataResult<Color> Get(int id)
+    public IDataResult<Color> GetById(int id)
     {
         if (DateTime.Now.Hour==11)
         {
             return new ErrorDataResult<Color>(Messages.MaintenanceTime);
         }
-        return new SuccessDataResult<Color>(_colorDal.Get(c=>c.ColorId == id));
+        return new SuccessDataResult<Color>(_colorDal.Get(c=>c.Id == id));
     }
 
     public IResult Add(Color color)
