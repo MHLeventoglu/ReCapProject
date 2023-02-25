@@ -278,3 +278,8 @@ C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\b
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Core.pdb
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\DataAccess.pdb
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Entities.pdb
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Castle.Core.dll
