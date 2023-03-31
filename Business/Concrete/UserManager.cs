@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -16,7 +17,7 @@ public class UserManager : IUserService
     }
     public IDataResult<List<User>> GetAll()
     {
-        if (DateTime.Now.Hour == 13)
+        if (DateTime.Now.Hour == 00)
         {
             return new ErrorDataResult<List<User>>(Messages.MaintenanceTime);
         }
@@ -26,12 +27,27 @@ public class UserManager : IUserService
 
     public IDataResult<User> GetById(int id)
     {
-        if (DateTime.Now.Hour == 13)
+        if (DateTime.Now.Hour == 00)
         {
             return new ErrorDataResult<User>(Messages.MaintenanceTime);
         }
 
         return new SuccessDataResult<User>(_userDal.Get(u=>u.Id == id));
+    }
+
+    public IDataResult<List<OperationClaim>> GetClaims(User user)
+    {
+        return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user));
+    }
+
+    public IDataResult<User> GetByEmail(string? email)
+    {
+        var result = _userDal.Get(u => u.Email == email);
+        if (result==null!)
+        {
+            return new ErrorDataResult<User>(Messages.InvalidEmail);
+        }
+        return new SuccessDataResult<User>(_userDal.Get(c => c.Email == email));
     }
 
     public IResult Add(User user)

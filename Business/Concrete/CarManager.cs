@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices.JavaScript;
 using Business.Abstract;
+using Business.BusinessAspect.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspect.Autofac.Validation;
@@ -23,7 +24,7 @@ public class CarManager : ICarService
 
     public IDataResult<List<Car>> GetAll()
     {
-            if (DateTime.Now.Hour==11)
+            if (DateTime.Now.Hour==00)
             {
                 return new ErrorDataResult<List<Car>>(Messages.MaintenanceTime);
             }
@@ -32,7 +33,7 @@ public class CarManager : ICarService
 
     public IDataResult<Car> GetById(int id)
     {
-        return new SuccessDataResult<Car>(_carDal.Get(c=>c.Id==id));
+        return new SuccessDataResult<Car>(_carDal.Get(c=> c.Id ==id));
     }
 
     public IDataResult<List<Car>> GetByBrandId(int id)
@@ -50,7 +51,8 @@ public class CarManager : ICarService
         return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.DailyPrice>=min && p.DailyPrice<=max));
     }
 
-    [ValidationAspect(typeof(CarValidator))]
+    [SecuredOperation("role1")]
+    //[ValidationAspect(typeof(CarValidator))]
     public IResult Add(Car car)
     {
         //Business codes...

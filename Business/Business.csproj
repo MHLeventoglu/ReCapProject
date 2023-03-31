@@ -13,7 +13,12 @@
 
     <ItemGroup>
       <PackageReference Include="Autofac" Version="6.5.0" />
+      <PackageReference Include="Castle.Core" Version="5.1.1" />
       <PackageReference Include="FluentValidation" Version="11.5.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Primitives" Version="8.0.0-preview.2.23128.3" />
     </ItemGroup>
 
 </Project>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Business.Abstract;
+using Business.BusinessAspect.Autofac;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -78,7 +79,6 @@ namespace WebAPI.Controllers
 
             return BadRequest(result.Message);
         }
-
         [HttpPost("add")]
         public IActionResult Add(Car car)
         {
@@ -112,6 +112,8 @@ namespace WebAPI.Controllers
 
             return BadRequest(result);
         }
+        
+        
 
     }
 }

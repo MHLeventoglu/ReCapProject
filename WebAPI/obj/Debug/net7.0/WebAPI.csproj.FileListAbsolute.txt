@@ -283,3 +283,11 @@ C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\b
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.Extensions.DependencyInjection.dll
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.Extras.DynamicProxy.dll
 C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\WebAPI.staticwebassets.runtime.json
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Hosting.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mhlev\Desktop\ \MyCoddingTraining\C#\C#Projects\ReCapProject\WebAPI\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll

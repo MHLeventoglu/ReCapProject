@@ -13,4 +13,8 @@
       <ProjectReference Include="..\Entities\Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Http.Features" />
+    </ItemGroup>
+
 </Project>

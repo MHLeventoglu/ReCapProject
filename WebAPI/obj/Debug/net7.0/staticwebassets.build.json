@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "7/8N/7vR8Gil4oF52j1JyaDaDh/w/bwrwTANJiMV94U=",
+  "Hash": "JTzMEW/3vJf2Rnbmj4Fptm9QF7yUtkebmyBdEDl8PVI=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPI\\wwwroot",
+      "Source": "WebAPI",
+      "ContentRoot": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\uploads\\carImages\\75e6de8b-849c-484c-af07-a24d0af4b73a.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "uploads/carImages/75e6de8b-849c-484c-af07-a24d0af4b73a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\carImages\\75e6de8b-849c-484c-af07-a24d0af4b73a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\uploads\\carImages\\DefaultImage.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "uploads/carImages/DefaultImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\carImages\\DefaultImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\uploads\\carImages\\f7bdc6b9-5631-4c36-a806-d7d2e2997253.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mhlev\\Desktop\\\u2004\\MyCoddingTraining\\C#\\C#Projects\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "uploads/carImages/f7bdc6b9-5631-4c36-a806-d7d2e2997253.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\carImages\\f7bdc6b9-5631-4c36-a806-d7d2e2997253.jpg"
+    }
+  ]
 }
